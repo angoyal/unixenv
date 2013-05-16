@@ -1,0 +1,21 @@
+#set +n
+export PAGER=less
+
+# Set the PATH
+TEMP_PATH=$PATH
+
+#echo $TEMP_PATH
+
+export PATH=/usr/bin:/bin/:/usr/sbin:$HOME/bin:$PATH:Ankur
+
+export TEMP_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+
+export MANPATH=/usr/X11R6/man:$MANPATH
+
+###################################
+# Update PATH for cisco
+###################################
+
+###################################
+# End
+###################################

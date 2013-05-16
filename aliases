@@ -1,0 +1,31 @@
+#SET alias curr to point to the working directory of the present project
+
+# Set The aliases
+alias sql="cd /cygdrive/d/sql-ledger"
+
+alias bye=logout
+
+alias pd=dirs
+alias po=popd
+alias pp=pushd
+
+alias ls='ls -F --color'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias m=more
+alias dir=ls
+alias ll='ls -la'
+alias '..'='cd ..'
+alias la='ls -a'
+alias l=ls
+alias c=clear
+
+alias ue=emacs
+alias vi="gvim"
+#alias vi=vim
+
+#export LD_LIBRARY_PATH=/opt/SUNWconn/lib
+
+#echo "hi there"
