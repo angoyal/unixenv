@@ -1,40 +1,59 @@
 #!/usr/bin/python
 
-import dircache
 import os
+import dircache
 
 a = dircache.listdir(".") 
 print len(a), " Files found in downloaded environment:"
 print a
 
+ignore=[]
+
 print "Iterating over them..."
 for f in a:
+	defsrc = "./" + f
+	defdst = os.getenv("HOME","~/") + "/." + f
 	if f == "aliases":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "viminfo":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "bashrc":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "explorer.vim":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "exrc":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "gvimrc":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "path_settings":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
 	if f == "vimrc":
-		os.rename(f, "~/." + f)
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
 		continue
-	print "ignoring... ", f
+	if f == "viminfo":
+		print "copying ", defsrc, " to ", defdst, "..."
+		os.rename(defsrc, defdst)
+		continue
+        ignore.append(f)
 
+
+for ig in ignore:
+	print "ignoring ",ig,"..."
 
 print "Creating .backup directory..."
-os.create("~/.backup")
+os.mkdir(os.getenv("HOME","~/") + "/.backup")
