@@ -24,6 +24,8 @@ for f in a:
 	if f == "bashrc":
 		print "copying ", defsrc, " to ", defdst, "..."
 		os.rename(defsrc, defdst)
+                symdst = os.getenv("HOME","~/") + "/.bash_profile"
+                os.symlink(defdst,symdst)
 		continue
 	if f == "explorer.vim":
 		print "copying ", defsrc, " to ", defdst, "..."
