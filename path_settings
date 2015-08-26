@@ -11,11 +11,3 @@ export PATH=/usr/bin:/bin/:/usr/sbin:$HOME/bin:$PATH:Ankur
 export TEMP_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 
 export MANPATH=/usr/X11R6/man:$MANPATH
-
-###################################
-# Update PATH for cisco
-###################################
-
-###################################
-# End
-###################################
