@@ -88,23 +88,8 @@ fi
 
 case "`uname -n`" in 
 	"cbin3-nbsvob1") ;;
-	*) source /auto/andiamo/tools/etc/.bashrc.build
+	*) echo "do nothing"
 esac
-
-###################################
-# End
-###################################
-
-###################################
-# Set andiamo build environment
-###################################
-
-AND_BUILD_ENV=/auto/andatc/independent/shellrc-files/current/rc/.bashrc.build
-if [ -f $AND_BUILD_ENV ]
-then
-        source $AND_BUILD_ENV
-fi
-
 
 ###################################
 # End
