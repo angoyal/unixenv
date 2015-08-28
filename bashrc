@@ -24,6 +24,7 @@ fi
 # Set up the shell variables:
      EDITOR=vi
      export EDITOR
+     export TERM=xterm
 
 ###################################
 # End
