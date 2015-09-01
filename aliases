@@ -29,3 +29,6 @@ alias vi="gvim"
 #export LD_LIBRARY_PATH=/opt/SUNWconn/lib
 
 #echo "hi there"
+alias lp='cd ~/src/learnbuzz.git/development/tenaday/tenproj'
+alias lt='cd ~/src/learnbuzz.git/development/tenaday'
+alias ld='cd ~/src/learnbuzz.git/development'
