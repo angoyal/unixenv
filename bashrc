@@ -96,22 +96,7 @@ esac
 # End
 ###################################
 
-###################################
-# Set aliases for cisco
-###################################
 
-alias vb="cd /auto/andusr/angoyal"
-alias sf="cd /auto/andusr/angoyal/sf"
-alias vg="cd /auto/andusr/angoyal/sf/VegasSW"
-alias ft="cd /auto/andusr/angoyal/sf/VegasSW/isan/feature"
-alias sn="cd /auto/andusr/angoyal/sf/VegasSW/isan"
-alias ut="cd /auto/andusr/angoyal/sf/VegasSW/isan/utils"
-alias svi="cd /auto/andusr/angoyal/sf/VegasSW/isan/feature"
-alias cnp="perl /auto/andusr/angoyal/sf/VegasSW/isan/templates/fsmu_based_app/create_new_process"
-
-###################################
-# End
-###################################
 
 cd
 clear
