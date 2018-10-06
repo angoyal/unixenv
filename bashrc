@@ -1,4 +1,13 @@
 ###################################
+# utility to override custom function
+###################################
+save_function() {
+    local ORIG_FUNC=$(declare -f $1)
+    local NEWNAME_FUNC="$2${ORIG_FUNC#$1}"
+    eval "$NEWNAME_FUNC"
+}
+
+###################################
 # Source the default rc
 ###################################
 
@@ -64,7 +73,11 @@ else
     PMT=">"
 fi
 
-export PS1='${PWD} $PMT '
+#export PS1='${PWD} $PMT '
+function cd() {
+	builtin cd $1
+	export PS1="`pwd` $PMT"
+}
 
 ###################################
 # End
