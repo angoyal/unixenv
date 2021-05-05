@@ -102,7 +102,7 @@ fi
 
 case "`uname -n`" in 
 	"cbin3-nbsvob1") ;;
-	*) echo "do nothing"
+	#*) echo "do nothing"
 esac
 
 ###################################

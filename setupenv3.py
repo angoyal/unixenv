@@ -24,7 +24,10 @@ for f in a:
         print ("copying ", defsrc, " to ", defdst, "...")
         os.rename(defsrc, defdst)
         symdst = os.getenv("HOME","~/") + "/.bash_profile"
-        os.symlink(defdst,symdst)
+        if not os.path.exists(os.getenv("HOME", "~") + "/.bash_profile"):
+            os.symlink(defdst,symdst)
+        else:
+            print ("File " + symdst + " already exists. Skipping it...\n")
         continue
     if f == "explorer.vim":
         print ("copying ", defsrc, " to ", defdst, "...")
@@ -50,7 +53,8 @@ for f in a:
         print ("copying ", defsrc, " to ", defdst, "...")
         os.rename(defsrc, defdst)
         continue
-        ignore.append(f)
+
+    ignore.append(f)
 
 
 for ig in ignore:
